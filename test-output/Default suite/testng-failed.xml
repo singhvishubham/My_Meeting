@@ -6,7 +6,6 @@
       <class name="Test_File.TC1_Login_Page">
         <methods>
           <include name="Intial_Setup"/>
-          <include name="Login"/>
           <include name="Closing_Convene"/>
           <include name="Meeting"/>
         </methods>

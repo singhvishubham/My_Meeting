@@ -38,6 +38,7 @@ public class Convene_Full_Page {
 
 		WebElement TC = MyWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ACCEPT_BTN")));
 
+		
 		TC.click();
 
 		driver.findElement(By.xpath("//input[@id='BTN_NEW']")).click();
@@ -59,6 +60,7 @@ public class Convene_Full_Page {
 			if (S1.equals("REL_COMPANY_ID-159") || S1.equals("REL_COMPANY_ID-158")) {
 				Ele1.click();
 			}
+			
 		}
 
 		Thread.sleep(3000);
@@ -72,7 +74,7 @@ public class Convene_Full_Page {
 		Thread.sleep(3000);
 
 		String Month = "August 2024";
-		String Day = "16";
+		String Day = "30";
 
 		driver.findElement(By.xpath("//div[@class='date-picker']")).click();
 
