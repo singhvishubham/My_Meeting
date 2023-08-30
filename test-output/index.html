@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OpenCart_Test" class="navigator-link">
-              <span class="suite-name border-passed">OpenCart_Test</span>
+              <span class="suite-name border-failed">OpenCart_Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OpenCart_Test" class="hide-methods failed suite-OpenCart_Test"> (hide)</a> <!-- hide-methods failed suite-OpenCart_Test -->
+                      <a href="#" panel-name="suite-OpenCart_Test" class="show-methods failed suite-OpenCart_Test"> (show)</a> <!-- show-methods failed suite-OpenCart_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-OpenCart_Test">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpenCart_Test" title="Test_File.TC2_Meeting_Page" class="method navigator-link" hash-for-method="Meeting">Meeting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OpenCart_Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +117,7 @@
                     <div class="method-list-content passed suite-OpenCart_Test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Test" title="Test_File.TC1_Login_Page" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpenCart_Test" title="Test_File.TC1_Login_Page" class="method navigator-link" hash-for-method="Meeting">Meeting</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OpenCart_Test" title="Test_File.TC2_Meeting_Page" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OpenCart_Test -->
@@ -123,10 +132,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OpenCart_Test" class="panel OpenCart_Test">
+          <div class="suite-OpenCart_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test_File.TC2_Meeting_Page</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Meeting">
+                  </a> <!-- Meeting -->
+                  <span class="method-name">Meeting</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at Test_File.TC2_Meeting_Page.Meeting(TC2_Meeting_Page.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OpenCart_Test-class-failed -->
           <div class="suite-OpenCart_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test_File.TC1_Login_Page</span>
+              <span class="class-name">Test_File.TC2_Meeting_Page</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -134,13 +163,6 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Meeting">
-                  </a> <!-- Meeting -->
-                  <span class="method-name">Meeting</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -158,7 +180,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test_File.TC1_Login_Page&quot;/&gt;
+      &lt;class name=&quot;Test_File.TC2_Meeting_Page&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- OpenCart_Test --&gt;
@@ -201,17 +223,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Meeting')
-data.setCell(0, 2, 'Test_File.TC1_Login_Page')
-data.setCell(0, 3, 22683);
+data.setCell(0, 2, 'Test_File.TC2_Meeting_Page')
+data.setCell(0, 3, 40637);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Login')
-data.setCell(1, 2, 'Test_File.TC1_Login_Page')
-data.setCell(1, 3, 4209);
+data.setCell(1, 2, 'Test_File.TC2_Meeting_Page')
+data.setCell(1, 3, 7327);
 window.suiteTableData['OpenCart_Test']= { tableData: data, tableDiv: 'times-div-OpenCart_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-OpenCart_Test">
               </div> <!-- times-div-OpenCart_Test -->
             </div> <!-- times-div -->
@@ -237,22 +259,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Test_File.TC1_Login_Page</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Test_File.TC2_Meeting_Page</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">Intial_Setup</span>
+                <span class="method-name">Intial_Setup(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">5378 ms</span>
+                <span class="method-start">7774 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Meeting</span>
-                <span class="method-start">9602 ms</span>
+                <span class="method-start">15117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Closing_Convene</span>
-                <span class="method-start">32287 ms</span>
+                <span class="method-start">55760 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -5,6 +5,7 @@
   <parameter name="browser" value="chrome"/>
     <classes>
       <class name="Test_File.TC1_Login_Page"/>
+      <class name="Test_File.TC2_Meeting_Page"/>
     </classes>
   </test>
   
