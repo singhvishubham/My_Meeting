@@ -1,6 +1,7 @@
 
 package Test_File;
 
+import POM.Meeting_POM;
 import org.testng.annotations.Test;
 import Base_File.Opening_Closeing;
 import POM.Login_POM;
@@ -19,6 +20,6 @@ public class TC1_Login_Page extends Opening_Closeing  {
 		LP.Final_Login();
 		
 		Thread.sleep(4000);
-		
+		LP.Acc_Button();
 	}	
 		}

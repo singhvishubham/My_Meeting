@@ -19,6 +19,13 @@ public class Login_POM extends Base_Class {
 	WebElement Click_Login;
 
 
+	@FindBy(id = "ACCEPT_BTN")
+	WebElement Accept;
+
+	public void Acc_Button() {
+		Accept.click();
+	}
+
 	// Actions Methods
 
 	public void C_Username(String UID) {

@@ -5,7 +5,7 @@
   <parameter name="browser" value="edge"/>
     <classes>
       
-      <class name="Test_File.TC2_Meeting_Page"/>
+      <class name="Test_File.TC3_Resolution_page"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- OpenCart_Test -->

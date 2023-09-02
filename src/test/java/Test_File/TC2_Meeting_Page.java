@@ -14,7 +14,7 @@ public class TC2_Meeting_Page extends TC1_Login_Page   {
 		
 		try {
 		Meeting_POM  Meeting = new Meeting_POM<Object>(driver);
-		Meeting.Acc_Button();
+
 		
 		
 		boolean targetpage=Meeting.getConfirmMessage();

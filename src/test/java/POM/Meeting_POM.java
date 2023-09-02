@@ -14,12 +14,7 @@ public class Meeting_POM<WebElements> extends Base_Class {
 		super(driver);
 	}
 
-	@FindBy(id = "ACCEPT_BTN")
-	WebElement Accept;
 
-	public void Acc_Button() {
-		Accept.click();
-	}
 
 	@FindBy(xpath = "//span[@id='LogoSubtitle']")
 	WebElement message;

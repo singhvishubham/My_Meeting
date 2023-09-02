@@ -96,3 +96,9 @@
 23:10:44.384 [main] INFO  Test_File.TC2_Meeting_Page - ***Core User login***
 23:14:24.298 [main] INFO  Test_File.TC2_Meeting_Page - ***Starting_TC1_Login_Page***
 23:14:24.336 [main] INFO  Test_File.TC2_Meeting_Page - ***Core User login***
+19:41:03.873 [main] INFO  Test_File.TC2_Meeting_Page - ***Starting_TC1_Login_Page***
+19:41:03.894 [main] INFO  Test_File.TC2_Meeting_Page - ***Core User login***
+20:01:48.785 [main] INFO  Test_File.TC3_Resolution_page - ***Starting_TC1_Login_Page***
+20:01:48.806 [main] INFO  Test_File.TC3_Resolution_page - ***Core User login***
+20:05:50.538 [main] INFO  Test_File.TC3_Resolution_page - ***Starting_TC1_Login_Page***
+20:05:50.556 [main] INFO  Test_File.TC3_Resolution_page - ***Core User login***
