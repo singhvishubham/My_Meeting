@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class Meeting_POM<WebElements> extends Base_Class {
+public class Meeting_POM extends Base_Class {
 
 	public Meeting_POM(WebDriver driver) {
 		super(driver);

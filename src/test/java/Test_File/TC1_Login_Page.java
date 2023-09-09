@@ -21,5 +21,6 @@ public class TC1_Login_Page extends Opening_Closeing  {
 		
 		Thread.sleep(4000);
 		LP.Acc_Button();
+		Thread.sleep(8000);
 	}	
 		}
