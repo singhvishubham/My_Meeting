@@ -21,10 +21,10 @@ public class Resolution_POM extends Base_Class {
     WebElement message;
 
     @FindBy(xpath = "//*[@id='RESOLUTIONS']")
-    WebElement resolution;
+   private WebElement resolution;
 
     @FindBy(xpath = "//*[@id=\"BTN_CREATE_RESOLUTIN\"]")
-    WebElement add_Resolution;
+    private WebElement add_Resolution;
 
     public void click_resolution(){
        //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
