@@ -30,6 +30,7 @@ public class Convene_Full_Page {
 
 		driver.get("https://test-v58.azeusconvene.com/");
 		driver.manage().window().maximize();
+		
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
@@ -37,6 +38,8 @@ public class Convene_Full_Page {
 		driver.findElement(By.id("PWD")).sendKeys("test1234");
 		driver.findElement(By.xpath("//input[@id='BTN_SIGN_IN']")).click();
 
+		
+		
 		WebElement TC = MyWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ACCEPT_BTN")));
 
 		

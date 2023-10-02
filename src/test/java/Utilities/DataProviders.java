@@ -11,6 +11,7 @@ public class DataProviders {
 	@DataProvider(name="LoginData")
 	public String [][] getData() throws IOException
 	{
+	
 		
 		String path=".\\TestData\\Concene.xlsx";//taking   file from testData
 		

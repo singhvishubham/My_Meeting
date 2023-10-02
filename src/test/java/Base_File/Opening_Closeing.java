@@ -47,6 +47,7 @@ public class Opening_Closeing {
 
 		
 		
+		
 		driver.get(RB.getString("URL"));
 		driver.manage().window().maximize();
 		
