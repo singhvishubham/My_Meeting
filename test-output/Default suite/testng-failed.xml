@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_File.TC2_Meeting_Page">
+      <class name="Test_File.TC3_Resolution_page">
         <methods>
           <include name="Intial_Setup"/>
-          <include name="Meeting"/>
           <include name="Login"/>
           <include name="Closing_Convene"/>
+          <include name="Resolution_Main"/>
         </methods>
-      </class> <!-- Test_File.TC2_Meeting_Page -->
+      </class> <!-- Test_File.TC3_Resolution_page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

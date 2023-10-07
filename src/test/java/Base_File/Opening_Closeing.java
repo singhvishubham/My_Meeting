@@ -1,9 +1,16 @@
 package Base_File;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.ResourceBundle;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,7 +27,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Opening_Closeing {
 	public Logger logger;
 	public ResourceBundle RB; //Java Utill Pakage
-	public WebDriver driver;
+	public  static WebDriver driver;
 	@Parameters("browser")
 	@BeforeClass()
 	public void Intial_Setup(String br) {
@@ -56,6 +63,24 @@ public class Opening_Closeing {
 	@AfterClass()
 	public void Closing_Convene() {
 		driver.close();
+
+	}
+	
+	
+	public String captureScreen(String tname) throws IOException {
+
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+				
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		String destination = System.getProperty("user.dir") + "\\Screenshot\\" + tname + "_" + timeStamp + ".png";
+
+		try {
+			FileUtils.copyFile(source, new File(destination));
+		} catch (Exception e) {
+			e.getMessage();
+		}
+		return destination;
 
 	}
 }

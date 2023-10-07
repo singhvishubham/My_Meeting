@@ -29,12 +29,12 @@ public class Resolution_POM extends Base_Class {
 	@FindBy(xpath = "//*[@id=\"BTN_CREATE_RESOLUTIN\"]")
 	public WebElement add_Resolution;
 
-	/*public void click_resolution() {
+	public void click_resolution() {
 
 		resolution.click();
 
 		add_Resolution.click();
-	}*/
+	}
 
 	@FindBy(xpath = "//input[@aria-label='Workspace']")
 	WebElement S_WorkSpace;

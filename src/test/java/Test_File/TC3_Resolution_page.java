@@ -18,24 +18,19 @@ public class TC3_Resolution_page extends TC1_Login_Page {
 	public void Resolution_Main() throws InterruptedException {
 		try {
 			Resolution_POM Reso = new Resolution_POM(driver);
-			
-			public void click_resolution() {
 
-				Reso.resolution.click();
-
-				Reso.add_Resolution.click();
-			}
+			Reso.click_resolution();
 
 			Reso.Add_Resolution();
-			
+
 			Reso.Organizer();
-			
+
 			Reso.Voter();
-			
+
 			Reso.Additonal_Access();
-			
+
 			Reso.Upload_File();
-			
+
 		} catch (Exception e) {
 			Assert.fail();
 		}
@@ -44,6 +39,6 @@ public class TC3_Resolution_page extends TC1_Login_Page {
 
 	private void click_resolution() {
 		// TODO Auto-generated method stub
-		
+
 	}
 }
