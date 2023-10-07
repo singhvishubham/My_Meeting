@@ -12,13 +12,13 @@ for Parllel Testing
   <listener class-name="Utilities.ExtentReportManager"></listener>
   </listeners>
   
-   <test thread-count="5" name="Test_1">
-  <parameter name="browser" value="chrome"/>
-    <classes>
-      
-      <class name="Test_File.TC2_Meeting_Page"/>
-    </classes>
-    </test>
+<!--   <test thread-count="5" name="Test_1">-->
+<!--  <parameter name="browser" value="chrome"/>-->
+<!--    <classes>-->
+<!--      -->
+<!--      <class name="Test_File.TC2_Meeting_Page"/>-->
+<!--    </classes>-->
+<!--    </test>-->
   <test thread-count="5" name="Tes_2">
   <parameter name="browser" value="chrome"/>
     <classes>

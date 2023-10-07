@@ -510,3 +510,5 @@
 11:49:09.954 [main] INFO  Test_File.TC2_Meeting_Page - ***Core User login***
 11:52:49.178 [main] INFO  Test_File.TC3_Resolution_page - ***Starting_TC1_Login_Page***
 11:52:49.179 [main] INFO  Test_File.TC3_Resolution_page - ***Core User login***
+20:04:35.585 [main] INFO  Test_File.TC3_Resolution_page - ***Starting_TC1_Login_Page***
+20:04:35.640 [main] INFO  Test_File.TC3_Resolution_page - ***Core User login***

@@ -29,25 +29,25 @@ public class Resolution_POM extends Base_Class {
 	@FindBy(xpath = "//*[@id=\"BTN_CREATE_RESOLUTIN\"]")
 	public WebElement add_Resolution;
 
-	public void click_resolution() {
-
-		resolution.click();
-
-		add_Resolution.click();
-	}
+//	public void click_resolution() {
+//
+//		resolution.click();
+//
+//		add_Resolution.click();
+//	}
 
 	@FindBy(xpath = "//input[@aria-label='Workspace']")
-	WebElement S_WorkSpace;
+	public WebElement S_WorkSpace;
 
 	@FindBy(xpath = "//div[@class='opt-chk checkbox']//input[@type='checkbox' and contains(@id,'REL_COMPANY_ID')]")
-	List<WebElement> Sel_WorkSpace;
+	public List<WebElement> Sel_WorkSpace;
 
 	@FindBy(id = "SUBJ")
-	WebElement Reso_Name;
+	public WebElement Reso_Name;
 
 	// Show of Hands Resolution.
 	@FindBy(id = "rd_RESOLN_TYPE_N")
-	WebElement Reso_Type;
+	public WebElement Reso_Type;
 
 	// Secret Ballot Resolutions.
 
@@ -55,19 +55,19 @@ public class Resolution_POM extends Base_Class {
 	// WebElement SB_Reso;
 
 	@FindBy(id = "NOTES_TO_VOTERS")
-	WebElement Reo_Notes;
+	public WebElement Reo_Notes;
 
 	@FindBy(id = "ADD_DUE_DT_BTN")
-	WebElement Voting_Deadline;
+	public WebElement Voting_Deadline;
 
 	@FindBy(id = "ALERT_TIME")
-	WebElement Send_Reminder;
+	public WebElement Send_Reminder;
 
 	@FindBy(id = "BTN_CREATE")
-	WebElement Create_Reso;
+	public WebElement Create_Reso;
 
 	@FindBy(xpath = "//div[@class='qtip-content']//button[@id='btn-yes']")
-	WebElement Accept_Reso;
+	public WebElement Accept_Reso;
 
 	public void Add_Resolution() throws InterruptedException {
 
