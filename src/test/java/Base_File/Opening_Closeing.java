@@ -76,6 +76,7 @@ public class Opening_Closeing {
 		String destination = System.getProperty("user.dir") + "\\Screenshot\\" + tname + "_" + timeStamp + ".png";
 
 		try {
+			
 			FileUtils.copyFile(source, new File(destination));
 		} catch (Exception e) {
 			e.getMessage();

@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="OpenCart_Test">
+
+<!-- 
+for Parllel Testing
+<suite name="OpenCart_Test" prarllel = "Tests">
+-->
+
   
   <listeners>
   <listener class-name="Utilities.ExtentReportManager"></listener>
   </listeners>
   
-  <test thread-count="5" name="Test">
+   <test thread-count="5" name="Test_1">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      
+      <class name="Test_File.TC2_Meeting_Page"/>
+    </classes>
+    </test>
+  <test thread-count="5" name="Tes_2">
   <parameter name="browser" value="chrome"/>
     <classes>
       
