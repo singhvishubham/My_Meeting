@@ -23,7 +23,7 @@ for Parllel Testing
   <parameter name="browser" value="chrome"/>
     <classes>
       
-      <class name="Test_File.TC3_Resolution_page"/>
+      <class name="Test_File.TC2_Meeting_Page"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- OpenCart_Test -->

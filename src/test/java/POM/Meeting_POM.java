@@ -19,99 +19,35 @@ public class Meeting_POM extends Base_Class {
 	WebElement message;
 
 	@FindBy(id = "BTN_NEW")
-	WebElement Scadule_NM;
+	public WebElement Scadule_NM;
 
-	public void New_Meeting() {
-		Scadule_NM.click();
-	}
+	
 
-	@FindBy(xpath = "//input[@aria-label=\"Workspace\"]")
-	WebElement W_Click;
-
-	public void My_Workspace() {
-		W_Click.click();
-	}
+	@FindBy(xpath = "//input[@aria-label='Workspace']")
+	public WebElement W_Click;
 
 	@FindBy(xpath = "//div[@class='opt-chk checkbox']//input[@type='checkbox' and contains(@id,'REL_COMPANY_ID')]")
-	List<WebElement> Ele;
-
-	public void Select_Workspace() {
-		for (WebElement Ele1 : Ele) {
-			System.out.println(Ele1.getAttribute("id"));
-			String S1 = Ele1.getAttribute("id");
-			if (S1.equals("REL_COMPANY_ID-159") || S1.equals("REL_COMPANY_ID-158")) {
-				Ele1.click();
-			}
-
-		}
-	}
+	public List<WebElement> Ele;
 
 	@FindBy(id = "MEETING_TYPE")
-	WebElement M_Type;
-
-	public void Type() {
-		Select Drop = new Select(M_Type);
-		Drop.selectByVisibleText("Board");
-
-	}
+	public WebElement M_Type;
 
 	@FindBy(xpath = "//textarea[@name='TITLE-en_GB']")
-	WebElement Meeting_Name;
-
-	public void M_Name(String MNAME) {
-		Meeting_Name.sendKeys(MNAME);
-	}
+	public WebElement Meeting_Name;
 
 	@FindBy(xpath = "//div[@class='date-picker']")
-	WebElement Cal;
-
-	public void Calender() {
-		Cal.click();
-
-		String Month = "May 2024";
-		String Day = "14";
-		while (true) {
-			String S1 = driver.findElement(By.xpath("//td[@class='title']")).getText();
-
-			if (S1.contains(Month)) {
-				break;
-			}
-			driver.findElement(By.xpath("//*[text()='›']")).click();
-
-		}
-		List<WebElement> AllDates = driver.findElements(By.xpath("//tbody//tr[@class='daysrow']//td"));
-		for (WebElement mydt : AllDates) {
-			if (mydt.getText().equals(Day)) {
-				mydt.click();
-			}
-		}
-
-	}
+	public WebElement Cal;
 
 	@FindBy(id = "VENUE")
-	WebElement M_Vanue;
-
-	public void M_Vanue(String Vanue) {
-		M_Vanue.sendKeys(Vanue);
-	}
+	public WebElement M_Vanue;
 
 	@FindBy(id = "ALERT_TIME")
-	WebElement M_Reminder;
-
-	public void Alert() {
-		Select Reminder1 = new Select(M_Reminder);
-		Reminder1.selectByIndex(2);
-	}
+	public WebElement M_Reminder;
 
 	@FindBy(xpath = "//input[@name='BTN_SAVE_MEETING']")
-	WebElement Scadule_Meeting;
+	public WebElement Scadule_Meeting;
 
-	public void Sc_Meeting() throws InterruptedException {
-		Scadule_Meeting.click();
-
-		Thread.sleep(4000);
-	}
-
+	
 	// Organizer POM
 
 	@FindBy(xpath = "//a[@class='helper-ui line-height-25 text-decoration-none mt-add-organiser']")
