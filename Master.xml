@@ -16,14 +16,14 @@ for Parllel Testing
 <!--  <parameter name="browser" value="chrome"/>-->
 <!--    <classes>-->
 <!--      -->
-<!--      <class name="Test_File.TC2_Meeting_Page"/>-->
+<!--      <class name="Test_File.TC3_Review_Room_Page"/>-->
 <!--    </classes>-->
 <!--    </test>-->
   <test thread-count="5" name="Tes_2">
   <parameter name="browser" value="chrome"/>
     <classes>
       
-      <class name="Test_File.TC2_Meeting_Page"/>
+      <class name="Test_File.TC5_ReviewRoom_Approv_page"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- OpenCart_Test -->

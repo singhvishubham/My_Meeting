@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Base_Class {
  
-	WebDriver driver;
+	public WebDriver driver;
 	
 	public Base_Class (WebDriver driver) {
 		{

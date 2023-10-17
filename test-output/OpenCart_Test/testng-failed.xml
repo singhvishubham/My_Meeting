@@ -7,13 +7,13 @@
   <test thread-count="5" name="Tes_2(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Test_File.TC2_Meeting_Page">
+      <class name="Test_File.TC5_ReviewRoom_Approv_page">
         <methods>
-          <include name="Meeting"/>
           <include name="Intial_Setup"/>
           <include name="Closing_Convene"/>
+          <include name="ReviewRoom_Main1"/>
         </methods>
-      </class> <!-- Test_File.TC2_Meeting_Page -->
+      </class> <!-- Test_File.TC5_ReviewRoom_Approv_page -->
     </classes>
   </test> <!-- Tes_2(failed) -->
 </suite> <!-- Failed suite [OpenCart_Test] -->

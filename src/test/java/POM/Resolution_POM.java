@@ -20,8 +20,7 @@ public class Resolution_POM extends Base_Class {
 		super(driver);
 	}
 
-	/* Intial Resoluton Web Page Elements  */
-	
+	  
 	
 	@FindBy(xpath = "//span[@id='LogoSubtitle']")
 	WebElement message;

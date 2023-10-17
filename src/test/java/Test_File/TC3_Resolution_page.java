@@ -13,21 +13,23 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
+
 public class TC3_Resolution_page extends TC1_Login_Page {
 
 	@Test(priority = 1)
 	public void Resolution_Main() throws InterruptedException {
 		Resolution_POM Reso_object = new Resolution_POM(driver);
 
+		
 		try {
-			Resolution_POM Reso = new Resolution_POM(driver);
-
+		
 			Reso_object.resolution.click();
 
 			Reso_object.add_Resolution.click();
 
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+			
 			Reso_object.S_WorkSpace.click();
 
 			Thread.sleep(2000);
