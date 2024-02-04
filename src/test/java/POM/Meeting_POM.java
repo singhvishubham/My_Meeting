@@ -51,19 +51,19 @@ public class Meeting_POM extends Base_Class {
 	// Organizer POM
 
 	@FindBy(xpath = "//a[@class='helper-ui line-height-25 text-decoration-none mt-add-organiser']")
-	WebElement Add_Organizer;
+	public WebElement Add_Organizer;
 
 	@FindBy(id = "SEARCH")
-	WebElement Search_Organizer;
+	public WebElement Search_Organizer;
 
 	@FindBy(xpath = "//tbody//tr//td//input[@value='Add']")
-	List<WebElement> Adding_Org;
+	public List<WebElement> Adding_Org;
 
 	@FindBy(xpath = "//input[@name='BTN_DONE']")
-	WebElement Org_Done;
+	public WebElement Org_Done;
 
 	@FindBy(xpath = "//div[@class='section-header margin-bottom-0']//button[@class='btni-highlight mtsection-btn-save mtsection-btn-spacer']")
-	WebElement Org_Save;
+	public WebElement Org_Save;
 
 	public void Meeting_Org() throws InterruptedException {
 

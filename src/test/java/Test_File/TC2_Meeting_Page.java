@@ -73,7 +73,7 @@ public class TC2_Meeting_Page extends TC1_Login_Page {
 			Meeting.M_Vanue.sendKeys("Manila");
 			
 			//Using Config Files
-			//Meeting.M_Vanue(RB.getString("Vanue"));
+			Meeting.M_Vanue.sendKeys(RB.getString("Vanue"));
 			
 			Select Reminder1 = new Select(Meeting.M_Reminder);
 			Reminder1.selectByIndex(2);
